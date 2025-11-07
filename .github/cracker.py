@@ -1,20 +1,3 @@
-import hashlib
-
-password = "password123"
-hash_object = hashlib.md5(password.encode())
-hash_hex = hash_object.hexdigest()
-
-print(hash_hex)
-#output:482c811da5d5b4bc6d497ffa98491e38
-
-char_hashes = {
-    hashlib.sha256('a'.encode()).hexdigest(): 'a',
-    hashlib.sha256('b'.encode()).hexdigest(): 'b',
-    hashlib.sha256('c'.encode()).hexdigest(): 'c',
-}
-
-word_list_file = "wordlist.txt"
-
 
 import sys
 from typing import Dict, List
